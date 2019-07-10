@@ -9,6 +9,7 @@
         <!-- If you want custom browser colors on mobile -->
         <meta name="theme-color" content="#383748" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#383748">
+        <link rel="shortcut icon" type="image/png" href="src/images/footer-logo.png"/>
 
         <title></title>
 
