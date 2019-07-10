@@ -1,0 +1,35 @@
+.btn {
+  transition: all 0.4s ease-in;
+  padding: 20px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  display: inline-block;
+
+  &--primary {
+    background:transparent;
+    color: $primary;
+    border: 2px solid $primary;
+
+    &:hover {
+      color: $white;
+      background: $primary;
+    }
+  }
+
+  &--secondary {
+    color: $white;
+    background: $primary;
+    border: 2px solid $primary;
+    transition: 300ms;
+
+    &:hover {
+      background:transparent;
+      color: $primary;
+    }
+  }
+  
+}
+
+

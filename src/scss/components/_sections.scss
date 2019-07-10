@@ -1,0 +1,113 @@
+.whois {
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    padding: 250px $baseline;
+    margin-top: -10%;
+
+    @include mq($until: mobile) {
+        clip-path: none;
+        padding: $baseline*2 $baseline;
+        margin-top: 0;
+      }
+
+    p {
+        margin: 0 auto;
+    }
+}
+
+.entrepreneur {
+    img {
+        margin-top: -220px;
+
+        @include mq($until: mobile) {
+            margin-top: 0;
+          }
+    }
+
+    hr {
+        width: 115%;
+        margin: $baseline*3 0 $baseline*3 -15%;
+        height: 4px;
+        background: $primary;
+        border: none;
+
+        @include mq($until: tablet) {
+            width: 100%;
+            margin: $baseline*2 auto;
+          }
+
+        
+    }
+
+    .heading,
+    p {
+        padding-left: $baseline;
+        text-align: justify;
+
+        @include mq($until: tablet) {
+            padding-left: 0;
+          }
+    }
+}
+
+.quote {
+    padding: $baseline*6 $baseline*2;
+
+    h2 {
+        margin-bottom: $baseline*2;
+        max-width: 90%;
+
+        @include mq($until: tablet) {
+            max-width: 100%;
+          }
+    }
+}
+
+.investor {
+
+    hr {
+        width: 120%;
+        margin: $baseline*3 -20% $baseline*3 0;
+        height: 4px;
+        background: $primary;
+        border: none;
+        position: relative;
+        z-index: 2;
+
+        @include mq($until: tablet) {
+            width: 100%;
+            margin: $baseline*2 auto;
+          }
+    }
+
+    .heading,
+    p {
+        padding-right: $baseline*2;
+        text-align: justify;
+    }
+
+    .heading {
+        margin-top: $baseline*3;
+    }
+}
+
+.numbers {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    padding-bottom: 200px;
+    p {
+        margin: 0 auto $baseline*2;
+    }
+
+    img {
+        margin: $baseline*2 auto $baseline*4;
+    }
+
+    h3 {
+        margin-bottom: $baseline*3;
+    }
+}
+
+.contact {
+    p {
+        margin: 0 auto $baseline*2;
+    }
+}

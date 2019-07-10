@@ -1,0 +1,97 @@
+$baseline: 16px;
+$font: 'Lato', sans-serif;
+
+
+//FONT SIZES
+$s1-text: 100px;
+$s2-text: 60px;
+$s3-text: 50px;
+$s4-text: 30px;
+$s5-text: 25px;
+$s6-text: 20px;
+
+//LINE HEIGHTS
+$s1-lh: 110px;
+$s2-lh: 80px;
+$s3-lh: 60px;
+$s4-lh: 40px;
+$s5-lh: 35px;
+$s6-lh: 35px;
+
+@mixin font-lato($size: false, $colour: false, $weight: false,  $lh: false) {
+  font-family: $font;
+  @if $size { font-size: $size; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+
+h1 {
+    @include font-lato($size:$s1-text, $colour:$primary, $weight:400, $lh:$s1-lh)
+    letter-spacing: 15px;
+
+    @include mq($until: desktop) {
+      color: $white;
+    }
+
+    @include mq($until: mobile) {
+      font-size: $s4-text;
+      letter-spacing: 5px;
+      line-height: $s4-lh;
+    }
+  }
+
+h2 {
+  @include font-lato($size:$s2-text, $colour:$primary, $weight:400, $lh:$s2-lh)
+  letter-spacing: 15px;
+
+  @include mq($until: mobile) {
+    font-size: $s4-text;
+    line-height: $s4-lh;
+  }
+}
+  
+h3 {
+
+  @include font-lato($size:$s3-text, $colour:$primary, $weight:400, $lh:$s3-lh)
+  letter-spacing: 15px;
+
+  @include mq($until: desktop) {
+    letter-spacing: 5px;
+    font-size: $s4-text;
+    line-height: $s4-lh;
+
+  }
+
+  @include mq($until: mobile) {
+    font-size: $s5-text;
+    line-height: $s5-lh;
+  }
+}
+  
+h4 {
+
+  @include font-lato($size:$s4-text, $colour:$primary, $weight:400, $lh:$s4-lh)
+  font-style: italic;
+  letter-spacing: 7px;
+
+  @include mq($until: mobile) {
+    font-size: $s6-text;
+    letter-spacing: 5px;
+    line-height: $s6-lh;
+  }
+
+}
+
+h5 {
+  @include font-lato($size:$s6-text, $colour:$primary, $weight:400, $lh:$s5-lh)
+}
+
+p {
+  @include font-lato($size:$s6-text, $colour:$primary, $weight:100, $lh:$s6-lh)
+  max-width: 45rem;
+
+  @include mq($until: desktop) {
+    max-width: 100%;
+  }
+}

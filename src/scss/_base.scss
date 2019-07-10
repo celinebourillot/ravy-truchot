@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $font;
+  font-size: $baseline;
+  color: $primary;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+p {
+  word-break: break-word;
+}
+
+.body-lock {
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0 0 $baseline;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+hr {
+  width: 300px;
+  margin: $baseline*4 auto;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
